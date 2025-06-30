@@ -1,0 +1,69 @@
+.petCard {
+  max-width: 300px;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+  background-color: #fff;
+}
+.petCard-image {
+  width: 90%;
+  margin: 0 auto;
+  aspect-ratio: 3/2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+.petCard-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 0 0 15px 15px;
+}
+.petCard-description {
+  padding: 0 0.7rem 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1;
+
+  /* border: 1px solid blue; */
+}
+.pet_Name {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: var(--color-deepPurple);
+}
+.pet_Breed {
+  font-size: 1.1rem;
+  margin-bottom: 3px;
+  color: var(--color-charcoalBlack);
+}
+.pet_Price {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+.buy-btn {
+  width: 70%;
+  padding: 6px 12px;
+  margin-bottom: 0.5rem;
+
+  text-decoration: none;
+  align-self: center;
+  text-align: center;
+
+  border-radius: 5px;
+  background-color: var(--color-deepPurple);
+  color: var(--color-white);
+}
+.buy-btn:hover {
+  background-color: var(--color-lightPurple);
+}

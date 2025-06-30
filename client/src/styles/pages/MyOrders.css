@@ -1,0 +1,28 @@
+.ordersPage h2 {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.6rem;
+}
+
+.orders-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem;
+}
+.order-card {
+  border: 1px solid black;
+  max-width: 300px;
+  width: 300px;
+
+  padding: 10px;
+}
+@media (max-width: 600px) {
+  .orders-grid {
+    margin: 1rem;
+  }
+  .order-card {
+    width: 100%;
+    max-width: none;
+  }
+}
