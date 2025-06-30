@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 
 app.use(
-  cors({ origin: "https://pet-selling-system.vercel.app/", credentials: true })
+  cors({ origin: "https://pet-selling-system.vercel.app", credentials: true })
 );
 app.use(express.json());
 
