@@ -52,7 +52,7 @@ git clone https://github.com/your-username/pet-selling-system.git
 cd pet-selling-system
 ```
 
-### 2. 🧩 Install Dependencies
+### 2. Install Dependencies
 
 **Frontend:**
 
