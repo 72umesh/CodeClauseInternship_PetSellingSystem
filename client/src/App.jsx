@@ -8,6 +8,7 @@ import AddPet from "./pages/AddPet";
 import BuyPet from "./pages/BuyPet";
 import axios from "axios";
 import MyOrders from "./pages/MyOrders";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           />
         </Routes>
       </div>
+      <Footer />
     </Router>
   );
 }
