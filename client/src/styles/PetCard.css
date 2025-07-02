@@ -67,3 +67,9 @@
 .buy-btn:hover {
   background-color: var(--color-lightPurple);
 }
+
+@media (max-width: 900px) {
+  .petCard {
+    max-width: none;
+  }
+}
