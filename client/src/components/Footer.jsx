@@ -19,7 +19,7 @@ function Footer() {
       <div className="footer-bottom">
         <div>
           {" "}
-          <p>©{new Date().getFullYear()} WidgetHub. All Rights Reserved.</p>
+          <p>©{new Date().getFullYear()} Pet Zone. All Rights Reserved.</p>
         </div>
         <div className="Socials">
           {socials.map((social) => (
