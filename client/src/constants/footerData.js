@@ -27,13 +27,17 @@ export const links = [
   },
   {
     id: 2,
-    title: "WidgetsHub Repo",
-    href: "https://github.com/72umesh/WidgetHub",
+    title: "Pet Zone Repo",
+    href: "https://github.com/72umesh/CodeClauseInternship_PetSellingSystem",
   },
   {
     id: 3,
+    title: "WidgetsHub",
+    href: "https://72umesh.github.io/WidgetHub/",
+  },
+  {
+    id: 4,
     title: "Maharaja",
     href: "https://72umesh.github.io/Maharaja-Restaurant/",
   },
-  { id: 4, title: "MovieList", href: "https://72umesh.github.io/MovieList/" },
 ];

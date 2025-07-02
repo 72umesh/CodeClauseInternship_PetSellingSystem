@@ -2,6 +2,7 @@
   background: linear-gradient(135deg, var(--color-bg), #1a1a2e);
   color: #fff;
   padding: 1rem 2rem;
+  background-color: var(--color-purple);
 }
 .footer-container h4 {
   text-align: center;
