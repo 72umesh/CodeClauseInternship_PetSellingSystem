@@ -1,6 +1,9 @@
 import axios from "axios";
 
 const BASE_URL = import.meta.env.VITE_API_URL;
+if (!BASE_URL && import.meta.env.MODE !== "development") {
+  console.warn("VITE_API_URL is not defined in production!");
+}
 
 const instance = axios.create({
   baseURL:
