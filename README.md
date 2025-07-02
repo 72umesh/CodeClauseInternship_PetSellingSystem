@@ -99,6 +99,20 @@ npm run dev
 
 ---
 
+## 📜 License
+
+This project is **open-source** under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork the repo and submit a pull request.
+
+## 🌟 Show Your Support
+
+If you like this project, **star the repository** and share it with others!
+
+---
+
 📬 Connect with Me
 
 💼 Portfolio: https://umeshpalportfolio.vercel.app/
