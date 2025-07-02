@@ -115,7 +115,7 @@ function Navbar() {
                       handleLogout();
                       setToggleMenu(false);
                     }}
-                    className="logout-btn"
+                    className="logout-btn nav-link"
                   >
                     LogOut
                   </button>
