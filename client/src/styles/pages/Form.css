@@ -4,6 +4,8 @@
   margin: 3rem auto 0;
   padding: 15px;
   width: 500px;
+
+  box-shadow: 10px 10px 15px hsla(250, 78%, 71%, 0.5);
 }
 .form_container {
   display: flex;
@@ -36,6 +38,14 @@
   background-color: var(--color-purple);
   color: var(--color-white);
   cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+.submit-btn:hover {
+  /* color: var(); */
+  color: var(--color-charcoalBlack);
+  background-color: var(--color-palePurple);
+  transform: scale(1.05);
 }
 
 @media (max-width: 900px) {
