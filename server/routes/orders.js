@@ -5,6 +5,9 @@ import { db } from "../config/db.js";
 
 const router = express.Router();
 
+console.log("BODY:", req.body);
+console.log("USER ID:", req.userId);
+
 router.get("/orders", (req, res) => {
   const q = "SELECT * FROM orders";
   db.query(q, (err, data) => {

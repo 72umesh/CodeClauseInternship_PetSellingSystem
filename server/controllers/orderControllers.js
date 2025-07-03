@@ -8,9 +8,6 @@ export const placeOrder = (req, res) => {
     return res.status(400).json({ message: "Missing required fields" });
   }
 
-  console.log("BODY:", req.body);
-  console.log("USER ID:", req.userId);
-
   const q = `
     INSERT INTO orders (user_id, pet_id, buyer_name, buyer_email, address, amount)
     VALUES (?, ?, ?, ?, ?, ?)
