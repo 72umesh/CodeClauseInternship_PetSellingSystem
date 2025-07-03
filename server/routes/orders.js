@@ -12,6 +12,6 @@ router.get("/orders", (req, res) => {
     res.status(200).json(data);
   });
 });
-router.post("/orders", placeOrder);
+router.post("/orders", verifyToken, placeOrder);
 
 export default router;
