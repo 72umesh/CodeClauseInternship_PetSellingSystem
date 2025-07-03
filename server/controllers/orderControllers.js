@@ -4,9 +4,12 @@ export const placeOrder = (req, res) => {
   const { pet_id, buyer_name, buyer_email, address, amount } = req.body;
   const user_id = req.userId;
 
-  if (!buyer_name || !buyer_email || address) {
+  if (!buyer_name || !buyer_email || !address) {
     return res.status(400).json({ message: "Missing required fields" });
   }
+
+  console.log("BODY:", req.body);
+  console.log("USER ID:", req.userId);
 
   const q = `
     INSERT INTO orders (user_id, pet_id, buyer_name, buyer_email, address, amount)
