@@ -4,6 +4,9 @@ export const placeOrder = (req, res) => {
   const { pet_id, buyer_name, buyer_email, address, amount } = req.body;
   const user_id = req.userId;
 
+  console.log("BODY:", req.body);
+  console.log("USER ID:", req.userId);
+
   if (!buyer_name || !buyer_email || !address) {
     return res.status(400).json({ message: "Missing required fields" });
   }
