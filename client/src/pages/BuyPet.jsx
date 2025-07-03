@@ -36,12 +36,21 @@ function BuyPet() {
   }
   async function handleSubmit(e) {
     e.preventDefault();
+    const token = localStorage.getItem("token");
     try {
-      await axios.post("/orders", {
-        ...formData,
-        pet_id: pet.id,
-        amount: pet.price,
-      });
+      await axios.post(
+        "/orders",
+        {
+          ...formData,
+          pet_id: pet.id,
+          amount: pet.price,
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
       alert("Order Placed successfully");
       navigate("/");
     } catch (error) {
