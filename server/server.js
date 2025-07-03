@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import authRoutes from "./routes/auth.js";
 import { db } from "./config/db.js";
 import petRoutes from "./routes/pets.js";
-import orderRotes from "./routes/orders.js";
+import orderRoutes from "./routes/orders.js";
 
 dotenv.config();
 
@@ -19,7 +19,7 @@ app.use(express.json());
 
 app.use("/api", authRoutes);
 app.use("/api", petRoutes);
-app.use("/api", orderRotes);
+app.use("/api/orders", orderRoutes);
 
 db.connect((error) => {
   if (error) console.error("DB connection failed:", error);
