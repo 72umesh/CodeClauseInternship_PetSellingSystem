@@ -116,6 +116,8 @@ If you like this project, **star the repository** and share it with others!
 
 ---
 
+Made with ❤️ by [Umesh](https://github.com/72umesh)
+
 📬 Connect with Me
 
 💼 Portfolio: https://umeshpalportfolio.vercel.app/
