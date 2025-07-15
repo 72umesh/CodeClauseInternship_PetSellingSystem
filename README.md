@@ -1,5 +1,8 @@
 # Pet Selling System
 
+![PetZone Banner](./client/src/assets/PetZone.png)
+[![PetZone](https://img.shields.io/badge/PetZone-Live--Demo-blue)](https://pet-selling-system.vercel.app/)
+
 A **Pet Selling Platform** where users can **Register**, **Add Pet**, **Buy Pets** and **Track Orders**. Built using **React**, **Node.js**, **Express**, and **MySQL**.
 
 ## Features
