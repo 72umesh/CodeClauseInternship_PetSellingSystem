@@ -1,5 +1,6 @@
 import mysql from "mysql2";
 import dotenv from "dotenv";
+import fs from "fs";
 dotenv.config();
 
 export const db = mysql.createConnection({
@@ -9,6 +10,6 @@ export const db = mysql.createConnection({
   database: process.env.DB_NAME,
   port: process.env.DB_PORT,
   ssl: {
-    rejectUnauthorized: true,
+    ca: fs.readFileSync("./isgrootx1.pem"),
   },
 });
