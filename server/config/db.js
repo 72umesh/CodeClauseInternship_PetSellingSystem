@@ -10,6 +10,6 @@ export const db = mysql.createConnection({
   database: process.env.DB_NAME,
   port: process.env.DB_PORT,
   ssl: {
-    ca: fs.readFileSync("./isgrootx1.pem"),
+    ca: fs.readFileSync("/etc/secrets/isgrootx1.pem"),
   },
 });
