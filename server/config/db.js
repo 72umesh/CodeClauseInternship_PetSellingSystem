@@ -1,7 +1,12 @@
 import mysql from "mysql2";
 import dotenv from "dotenv";
 import fs from "fs";
+
+import path from "path";
+import { fileURLToPath } from "url";
 dotenv.config();
+
+const caPath = path.join(__dirname, "isgrootx1.pem");
 
 export const db = mysql.createConnection({
   host: process.env.DB_HOST,
@@ -10,6 +15,6 @@ export const db = mysql.createConnection({
   database: process.env.DB_NAME,
   port: process.env.DB_PORT,
   ssl: {
-    ca: fs.readFileSync("/etc/secrets/isgrootx1.pem"),
+    ca: fs.readFileSync(caPath),
   },
 });
